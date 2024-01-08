@@ -1,0 +1,14 @@
+{
+    "output_dir":"./finetuned_models/text_unimodal_test_quarter",
+    "per_device_train_batch_size":32,
+    "per_device_eval_batch_size":64,
+    "evaluation_strategy":"epoch",
+    "save_strategy":"epoch",
+    "num_train_epochs":7,
+    "logging_steps":1000,
+    "learning_rate":7e-6,
+    "save_total_limit":1,
+    "dataloader_num_workers":0,
+    "metric_for_best_model":"eval_f1",
+    "load_best_model_at_end":true
+}
